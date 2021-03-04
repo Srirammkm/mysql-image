@@ -1,4 +1,4 @@
 FROM mysql
 ENV MYSQL_ROOT_PASSWORD=root
 ENV MYSQL_DATABASE=MyDB
-RUN CREATE TABLE MyUsers ( firstname VARCHAR(30) NOT NULL,  lastname VARCHAR(30) NOT NULL);
+COPY /table.sql /docker-entrypoint-initdb.d/
