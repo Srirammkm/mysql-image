@@ -1,4 +1,4 @@
-CREATE TABLE employees (
-first_name varchar(25),
-last_name  varchar(25)
+CREATE TABLE MyUsers (
+firstname VARCHAR(30) NOT NULL,  
+lastname VARCHAR(30) NOT NULL
 );
